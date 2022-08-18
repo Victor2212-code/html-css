@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        body{
+            font-family: 'kaushan Script', Helvetica, sans-serif;
+
+            /*
+            medida Absolutas
+            cm(centimetro),mm(milimetro),in(polegada),px(pixel),pt(ponto),pc(paica).
+
+            medidas relativas
+            em(medida relativa ao tamanho atual da fonte), ex(relativo a altura x de uma fonte),rem(igual ao 'em' mais esse e relativo ao rut uma fonte que está configura no body), vw(largura da viewport),vh(basicamente a altura da viewport).
+
+            maneiras de medida de fonte para o font-size.
+
+            16px geralmentee um em(significa tamanho da letra normalmente).
+
+            Medidas oficialmente recomendadas pela w3c.
+            */
+            font-size: 1em;
+
+            /*peso da fonte é igual font-weight (lighter, normal bold,bolder)são propriedades usadas no font-weight.*/
+        }
+        h1{
+            /*massete shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: ' work Sans', sans-serif
+            font-weight:bolder;
+            font-size: 3em;
+            font-style:italic;
+            */
+            font: italic bolder 3em 'work Sans',sans-serif;/*forma resumida do de cima*/
+        }
+
+        h2{
+            font: italic 2em 'work Sans' serif;/*esse caso e quando vc não quer usar font-style.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ipsum delectus esse error inventore culpa officia. Earum, ipsa tempore obcaecati, itaque aut quidem animi perferendis harum doloribus rerum iure culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt blanditiis fugit rem perspiciatis quibusdam in veritatis quidem, voluptatibus quisquam adipisci iure veniam quae, dolores sapiente similique voluptatem distinctio? Nesciunt, obcaecati.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad beatae laborum aliquid corporis animi doloribus esse, explicabo ea possimus voluptates odit eligendi recusandae repellat placeat quibusdam a. Quo, eos animi.</p>
+    <h2>Subtitulo do exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam repudiandae quia deleniti, quos natus est delectus aliquid beatae corporis deserunt quisquam placeat provident explicabo molestiae. Porro ipsam perferendis natus!</p>
+</body>
+</html>
