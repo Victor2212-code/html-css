@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position:relative;
         }
 
         td, th{
@@ -19,36 +20,61 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding:  10px;
+            background-color: rgba(156, 153, 153, 0.773);
+        }
+
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(51, 50, 50);
             color: white;
         }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:rgb(51, 50, 50) ;
+        }
+
+        tbody > tr:nth-child(odd){/*2n-1*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){/*2n*/
+            background-color: lightgray;
+        }
+
         td.num{
             text-align: right;
         }
     </style>
 </head>
 <body>
+    <h1>Uso de tabelas grandes</h1>
         <!----
         Anatonmia para tabelas grandes
         TABLE
-        THEAD
-            TR, TD,TH.
-        TBODY
-            TR, TD, TH
-        TFOOT
-            TR, TD, TH.
+            CAPTION
+            THEAD
+                TR, TD,TH.
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH.
         -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
@@ -163,6 +189,20 @@
             </tr>
         </tbody>
     </table>    
-    
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quos enim quisquam cum laborum architecto ipsa maiores voluptas, officia aliquam consequuntur ab placeat tempore! Consectetur facilis nostrum aspernatur numquam corrupti?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, doloremque magni in tenetur ipsum asperiores dolorum molestias eligendi odit sed ex ut laudantium aliquam deleniti non consectetur praesentium neque repellendus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perferendis necessitatibus saepe, eveniet natus et commodi illum iure reiciendis quis veritatis provident adipisci vitae omnis mollitia excepturi temporibus aspernatur atque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam neque voluptate sequi eaque earum error dolores deserunt, iure odit consectetur saepe blanditiis exercitationem tempore sit maiores ipsum tenetur eius minus?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quos enim quisquam cum laborum architecto ipsa maiores voluptas, officia aliquam consequuntur ab placeat tempore! Consectetur facilis nostrum aspernatur numquam corrupti?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, doloremque magni in tenetur ipsum asperiores dolorum molestias eligendi odit sed ex ut laudantium aliquam deleniti non consectetur praesentium neque repellendus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perferendis necessitatibus saepe, eveniet natus et commodi illum iure reiciendis quis veritatis provident adipisci vitae omnis mollitia excepturi temporibus aspernatur atque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam neque voluptate sequi eaque earum error dolores deserunt, iure odit consectetur saepe blanditiis exercitationem tempore sit maiores ipsum tenetur eius minus?</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quos enim quisquam cum laborum architecto ipsa maiores voluptas, officia aliquam consequuntur ab placeat tempore! Consectetur facilis nostrum aspernatur numquam corrupti?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, doloremque magni in tenetur ipsum asperiores dolorum molestias eligendi odit sed ex ut laudantium aliquam deleniti non consectetur praesentium neque repellendus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perferendis necessitatibus saepe, eveniet natus et commodi illum iure reiciendis quis veritatis provident adipisci vitae omnis mollitia excepturi temporibus aspernatur atque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam neque voluptate sequi eaque earum error dolores deserunt, iure odit consectetur saepe blanditiis exercitationem tempore sit maiores ipsum tenetur eius minus?</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quos enim quisquam cum laborum architecto ipsa maiores voluptas, officia aliquam consequuntur ab placeat tempore! Consectetur facilis nostrum aspernatur numquam corrupti?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, doloremque magni in tenetur ipsum asperiores dolorum molestias eligendi odit sed ex ut laudantium aliquam deleniti non consectetur praesentium neque repellendus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perferendis necessitatibus saepe, eveniet natus et commodi illum iure reiciendis quis veritatis provident adipisci vitae omnis mollitia excepturi temporibus aspernatur atque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam neque voluptate sequi eaque earum error dolores deserunt, iure odit consectetur saepe blanditiis exercitationem tempore sit maiores ipsum tenetur eius minus?</p>
 </body>
 </html>
