@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,11 +24,22 @@
         th, td{
             border: 1px solid black;
         }
+        col.amarelo{
+            background-color: yellow;
+        }
+        col.vermelho{
+            background-color: red;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
     <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -56,28 +67,28 @@
             <td>Pediatra</td>
         </tr>
         <tr>
-            <th>Bruna Martens Milioli</th>
+            <th>Bruna</th>
             <td>F</td>
-            <td>25</td>
+            <td>18</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <th>Ana Cristina</th>
+            <td>F</td>
+            <td>59</td>
+            <td>Gerente de Banco</td>
+        </tr>
+        <tr>
+            <th>Maria Elena</th>
+            <td>F</td>
+            <td>29</td>
             <td>Jornalista</td>
         </tr>
         <tr>
-            <th>Ana Maria</th>
+            <th>Fernanda</th>
             <td>F</td>
-            <td>25</td>
-            <td>Jornalista</td>
-        </tr>
-        <tr>
-            <th>Ana Maria</th>
-            <td>F</td>
-            <td>25</td>
-            <td>Jornalista</td>
-        </tr>
-        <tr>
-            <th>Ana Maria</th>
-            <td>F</td>
-            <td>25</td>
-            <td>Jornalista</td>
+            <td>19</td>
+            <td>Balconista</td>
         </tr>
 
     </table>
